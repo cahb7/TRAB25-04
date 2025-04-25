@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>botão</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family:Cascadia Mono;
+      background-color: #F40009;
+    }
+
+    {
+      font-size: 24px;
+      color:black;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: ;
+      border-color: blue;
+      border-radius: 8px;
+      background-color: #007f;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #8888;
+      border-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="texto">Pega a mudança</div>
+  <button onclick="mudarEstilo()">Clique para mudar o estilo</button>
+
+  <script>
+    function mudarEstilo() {
+      const texto = document.getElementById('texto');
+      texto.style.color = 'blue';
+      texto.style.fontFamily = 'Courier New, monospace';
+    }
+  </script>
+</body>
+</html>
